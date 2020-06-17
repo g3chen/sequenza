@@ -13,6 +13,9 @@ RUN ./build-local-code /modulator/code/gsi/recipe.yaml --initsh /usr/share/modul
 	find /modules -type d -exec chmod 777 {} \; && \
 	find /modules -type f -exec chmod 777 {} \;
 
+# install required packages
+RUN apt-get -m update && apt-get install -y gzip zip unzip
+
 # add the user
 RUN groupadd -r -g 1000 ubuntu && useradd -r -g ubuntu -u 1000 ubuntu
 USER ubuntu
