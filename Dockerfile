@@ -21,7 +21,6 @@ RUN groupadd -r -g 1000 ubuntu && useradd -r -g ubuntu -u 1000 ubuntu
 USER ubuntu
 
 # copy the setup file to load the modules at startup
-# use different versions of .bashrc depending on gatk version of container
 COPY .bashrc /home/ubuntu/.bashrc
 
 # set environment paths for modules
