@@ -4,27 +4,24 @@ workflow test_location {
 
 task find_tools {
     command {
-        whereis sequenza
+        ls $BIOCONDUCTOR_ROOT
         echo "@@@@@@@@@@@@@@@@"
-        whereis R
+        ls $RSTATS_ROOT
         echo "@@@@@@@@@@@@@@@@"
-        whereis bioconductor
+        ls $SEQUENZA_ROOT
         echo "@@@@@@@@@@@@@@@@"
-        whereis sequenza-scripts
+        ls $SEQUENZA_RES_ROOT
         echo "@@@@@@@@@@@@@@@@"
-        whereis sequenza-res
+        ls $SEQUENZA_SCRIPTS_ROOT
         echo "@@@@@@@@@@@@@@@@"
 
-
-        echo $MANPATH
-        echo "################"
         echo $PATH
+        echo "################"
+        echo $MANPATH
         echo "################"
         echo $LD_LIBRARY_PATH
         echo "################"
-        ls $JAVA_ROOT
-        echo "################"
-        ls $PICARD_ROOT
+        echo $R_LIBS_SITE
     }
     output{
         String message = read_string(stdout())
