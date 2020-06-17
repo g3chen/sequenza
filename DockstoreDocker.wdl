@@ -6,7 +6,7 @@ input {
     File snpFile
     File cnvFile
 #    Array[String] gammaRange = ["50","100","200","300","400","500","600","700","800","900","1000","1250","1500","2000"]
-    Array[String] gammaRange = ["50","100","200"]
+    Array[String] gammaRange = ["50"]
     String outputFileNamePrefix = ""
     String docker = "g3chen/sequenza:1.0"
 }
