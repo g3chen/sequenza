@@ -1,0 +1,5 @@
+{
+  "sequenza.cnvFile": "/.mounts/labs/gsi/testdata/sequenza/input_data/VARTEST.copynumber",
+  "sequenza.snpFile": "/.mounts/labs/gsi/testdata/sequenza/input_data/VARTEST.snp",
+  "sequenza.outputFileNamePrefix": "TESTING"
+}
