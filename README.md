@@ -15,6 +15,17 @@ Sequenza workflow, Given a pair of cellularity and ploidy parameters, the functi
 
 ## Usage
 
+### Dockstore
+Make a runtime JSON template and fill in desired inputs, outputs, and other parameters
+```
+dockstore workflow convert entry2json --entry github.com/g3chen/sequenza/Sequenza:master > Dockstore.json
+vim Dockstore.json
+```
+Run locally with the Dockstore CLI
+```
+dockstore workflow launch --entry github.com/g3chen/sequenza/Sequenza:master --json Dockstore.json
+```
+
 ### Cromwell
 ```
 java -jar cromwell.jar run sequenza.wdl --inputs inputs.json
