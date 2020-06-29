@@ -27,6 +27,7 @@ task find_tools {
         String message = read_string(stdout())
     }
     runtime {
-        docker: "g3chen/sequenza:1.0"
+        docker: "g3chen/sequenza@sha256:f6ebd82705ecc3bdf5f2fead408333ae60492f36b23259d0730d6c70fc7fbb00"
+        modules: "sequenza/2.1.2 sequenza-scripts/2.1.2 sequenza-res/2.1.2"
     }
 }
