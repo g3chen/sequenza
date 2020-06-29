@@ -1,0 +1,6 @@
+{
+  "default_runtime_attributes": {
+    "docker": "g3chen/starfusion@sha256:f8e6071fb1f9aaa002a747a858f36a4fcd60949b668126dd2115490f0a19f95f",
+    "docker_volume": "/home/ubuntu/Downloads/sample_data:/data"
+  }
+}
