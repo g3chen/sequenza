@@ -2,5 +2,7 @@
   "sequenza.cnvFile": "/home/ubuntu/Downloads/sample_data/test_sequenza/VARTEST.copynumber",
   "sequenza.snpFile": "/home/ubuntu/Downloads/sample_data/test_sequenza/VARTEST.snp",
   "sequenza.outputFileNamePrefix": "TESTING",
-  "sequenza.gammaRange": ["50","100"]
+  "sequenza.gammaRange": ["50","100"],
+  "sequenza.runSequenza.modules": "sequenza/2.1.2 sequenza-scripts/2.1.2",
+  "sequenza.runSequenza.ploidyFile": "/data/SEQUENZA_RES_ROOT/PANCAN_ASCAT_ploidy_prob.Rdata"
 }
