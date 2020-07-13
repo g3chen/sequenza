@@ -1,0 +1,6 @@
+{
+  "sequenza.cnvFile": "/home/ubuntu/data/sample_data/sequenza/VARTEST.copynumber",
+  "sequenza.snpFile": "/home/ubuntu/data/sample_data/sequenza/VARTEST.snp",
+  "sequenza.outputFileNamePrefix": "TESTING",
+  "sequenza.gammaRange": ["50","100"]
+}
